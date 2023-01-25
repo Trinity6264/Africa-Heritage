@@ -4,10 +4,11 @@ nav {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 0.8em 4em;
+  padding: 0.6em 4em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 400ms ease;
 }
 
 nav .log-wrapper {
@@ -22,8 +23,10 @@ nav ul {
 nav ul li a {
   color: var(--light-color);
   transition: all 400ms ease;
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
+  gap: .2em;
 }
 
 nav ul li a::after {
@@ -34,7 +37,6 @@ nav ul li a::after {
   bottom: 0;
   border-radius: 30px;
   left: 0;
-  display: flex;
   transition: all 400ms ease-in-out;
   background-color: var(--light-color);
 }

@@ -7,14 +7,16 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
+  --dot-color: rgba(242, 150, 28, 1);
   --primary-color: rgba(236, 117, 47, 1);
   --primary-dark-color: rgba(126, 75, 37, 1);
   --light-color: rgba(255, 255, 255, 1);
   --dark-color: rgba(51, 51, 51, 1);
-  --light-dark-color:   rgba(51, 51, 51, 0.5);
+  --light-dark-color: rgba(51, 51, 51, 0.5);
 }
 
 body {
@@ -25,6 +27,19 @@ body {
 
 /* Global style */
 
-img{
+img {
   width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+
+
+nav,
+main {
+  width: 100%;
+  max-width: 1440px;
 }
