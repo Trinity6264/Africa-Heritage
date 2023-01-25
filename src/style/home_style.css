@@ -1,20 +1,218 @@
-
-
-.landing-page-pic-wrapper{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
-.landing-page-pic-wrapper::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 100vh;
-    background-color: var(--light-dark-color);
+.home {
+  position: relative;
 }
 
-.landing-page-pic-wrapper img{
+.landing-page-pic-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.landing-page-pic-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background-color: var(--light-dark-color);
+}
+
+.landing-page-pic-wrapper img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.landing-page-content-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.landing-page-content-wrapper h1 {
+  color: var(--light-color);
+  font-size: 3.2em;
+  font-weight: 600;
+}
+.landing-page-content-wrapper p {
+  margin: 1.5em 23em;
+  color: var(--light-color);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.landing-page-content-wrapper a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 0.7em 5em;
+  color: var(--light-color);
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 400ms ease-in;
+}
+.landing-page-content-wrapper a:hover {
+  background-color: var(--dark-color);
+}
+
+/* second page */
+
+.wildlife {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+}
+
+.wildlife .dot-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.wildlife .dot-wrapper .dot-1 {
+  width: 1em;
+  height: 1em;
+  margin-right: 2em;
+  margin-top: 2em;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+.wildlife .dot-wrapper .dot-2 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+
+.wildlife .dot-wrapper .dot-3 {
+  width: 0.5em;
+  height: 0.5em;
+  margin-top: 4em;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+}
+
+.wildlife .second-page-content {
+  width: 100%;
+  padding: 0 5em;
+  display: flex;
+  gap: 10em;
+}
+.wildlife .second-page-content .content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  width: 65%;
+}
+
+.wildlife .second-page-content .content-text h1 {
+  color: var(--primary-dark-color);
+  font-size: 3.5em;
+}
+
+.wildlife .second-page-content .content-logo {
+  width: 30%;
+}
+
+.wildlife-logo {
+  display: flex;
+  gap: 1em;
+  align-items: flex-end;
+}
+
+.wildlife-logo .lion-logo-wrapper {
+  width: 7%;
+}
+
+.wildlife-logo .lion-ball {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+  margin-bottom: 1em;
+}
+
+/* Reserve */
+.reserve{
+    /* height: 100vh; */
+    width: 100%;
+    padding-bottom: 1em;
+    background-color: var(--dark-color);
+}
+
+/* Reserve */
+
+.slot-logo-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slot-logo-wrapper img{
+    width: 5em;
+}
+.reserve h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--light-color);
+    margin-bottom: 1em;
+}
+.reserve .reserve-card-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.reserve-card-wrapper .reserve-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserve-card-wrapper .reserve-card p{
+    color: var(--light-color);
+}
+
+.reserve-card-wrapper .reserve-card .see-more{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* reserve-2 */
+.reserve-2{
+    width: 100%;
     height: 100vh;
-    object-fit: cover;
+    
+}
+
+.reserve-2 .reserve-2-imgs-wrapper{
+    display: flex;
+    gap: 2em;
+    padding: 2em 0;
+    margin-left: 2em;
+}
+
+.reserve-2 h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin: 1em 0;
+}
+
+.reserve-2 .reserve-form{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    gap: 5em;
+}
+
+.reserve-2 .reserve-form form {
+    /* width: 100%; */
 }
