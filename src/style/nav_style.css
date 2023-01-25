@@ -1,0 +1,45 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.8em 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .log-wrapper {
+  width: 5em;
+}
+nav ul {
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--light-color);
+  transition: all 400ms ease;
+  display: block;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 0.18em;
+  position: absolute;
+  bottom: 0;
+  border-radius: 30px;
+  left: 0;
+  display: flex;
+  transition: all 400ms ease-in-out;
+  background-color: var(--light-color);
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+  margin-left: 10px;
+}
