@@ -28,7 +28,7 @@ const Navbar = () => {
         <nav style={{ background: isScrolled ? 'var(--primary-dark-color)' : 'transparent' }}>
             <div className="log-wrapper">
                 <a href="#">
-                    <img src={Logo} alt="Logo" />
+                     <img src={Logo} alt="Logo" />
                 </a>
             </div>
             <ul style={{ right: isOpen ? '0' : '-450px' }}>
