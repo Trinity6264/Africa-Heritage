@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../style/nav_style.css'
 import Logo from '../assets/icons.svg'
 import { FaChevronDown } from 'react-icons/fa'
+import { AiOutlineMenu } from 'react-icons/ai'
 
 
 
@@ -28,6 +29,7 @@ const Navbar = () => {
                 <li> <a href="#reserve">Game Reserve <FaChevronDown /> </a></li>
                 <li> <a href="#contact">Contact Us</a></li>
             </ul>
+            <AiOutlineMenu id='menu-btn'/>
         </nav>
     )
 }
