@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li> <a href="#">Home</a></li>
                 <li> <a href="#wildlife">Wildlife Africa</a></li>
                 <li> <a href="#reserve">Game Reserve <FaChevronDown /> </a></li>
-                <li> <a href="#">Contact Us</a></li>
+                <li> <a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     )
