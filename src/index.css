@@ -14,6 +14,8 @@
   --dot-color: rgba(242, 150, 28, 1);
   --primary-color: rgba(236, 117, 47, 1);
   --primary-dark-color: rgba(126, 75, 37, 1);
+  --primary-active-color:  rgba(188, 92, 36, 1);
+  ;
   --light-color: rgba(255, 255, 255, 1);
   --border-color: rgba(193, 193, 193, 0.5);
   --hint-color: rgba(193, 193, 193, 1.0);

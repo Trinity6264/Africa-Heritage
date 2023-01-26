@@ -52,10 +52,10 @@
   color: var(--light-color);
   border-radius: 5px;
   font-weight: 600;
-  transition: all 400ms ease-in;
+  transition: all 300ms ease-in;
 }
 .landing-page-content-wrapper a:hover {
-  background-color: var(--dark-color);
+  background-color: var(--primary-active-color);
 }
 
 /* second page */
@@ -200,7 +200,7 @@
   text-align: center;
   font-size: 2.5em;
   color: var(--primary-color);
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .reserve-2 .reserve-form {
@@ -247,7 +247,7 @@
 }
 
 .reserve-2 .reserve-form form a:hover {
-  background-color: var(--primary-dark-color);
+  background-color: var(--primary-active-color);
 }
 
 .elephant-logo-wrapper {
@@ -258,8 +258,9 @@
 
 footer {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   position: relative;
+  overflow: hidden;
 }
 footer::after {
   content: "";
@@ -275,4 +276,51 @@ footer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+footer .footer-content-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5em;
+  left: 5%;
+  margin: 0 auto;
+  display: flex;
+
+  gap: 5em;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+  color: var(--light-color);
+}
+footer .footer-content-wrapper .div-one {
+  width: 30%;
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .footer-content-wrapper .div-one img {
+  height: 4em;
+  object-fit: contain;
+}
+
+.div-one h3{
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.div-one ul{
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+}
+
+.logos-wrapper{
+  display: flex;
+  gap: 1em;
+}
+.logos-wrapper svg{
+  border-radius: 100%;
+  font-size: 1.2em;
 }
