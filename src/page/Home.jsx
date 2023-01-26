@@ -5,9 +5,9 @@ import '../style/home_style.css'
 
 import LandingPage from '../components/LandingPage'
 import WildLife from '../components/WildLife'
-
 import SlotPic from '../assets/slot.svg'
 import Frame1 from '../assets/frame1.svg'
+import Elephant from '../assets/elephant.svg'
 import Frame2 from '../assets/frame2.svg'
 import Frame3 from '../assets/frame3.svg'
 import Giraffe from '../assets/giraffe.svg'
@@ -16,6 +16,7 @@ import Frame5 from '../assets/frame5.svg'
 import Frame6 from '../assets/frame6.svg'
 import Frame7 from '../assets/frame7.svg'
 import ReserveCard from '../components/ReserveCard'
+import TextField from '../components/TextField'
 
 
 const Home = () => {
@@ -36,6 +37,21 @@ const Home = () => {
       content: 'The Mombo Concession is located within Moremi Game Reserve in Botswana and is arguably the best big game viewing area in all of Southern Africa. Spanning 111,000 acres in the central...',
     },
   ];
+
+  const fieldsData = [
+    {
+      hintText: 'Type your full name',
+      labelText: 'Full name',
+    },
+    {
+      hintText: 'abc@xyz.com',
+      labelText: 'Email Address',
+    },
+    {
+      hintText: 'Type your phone number',
+      labelText: 'Phone Number',
+    },
+  ]
 
   return (
     <section className='home'>
@@ -69,14 +85,24 @@ const Home = () => {
           </div>
 
           <form>
-            <div className="input-wrapper">
-              <label htmlFor="fn">Full name</label>
-              <div className="label-input">
-                <input type="text" placeholder='Type your full name' id='fn' />
+            {fieldsData.map(({ hintText, labelText }) => {
+              return <TextField hintText={hintText} lblText={labelText} key={labelText} />
+            })}
+            <div className="date-wrapper">
+              <div className="input-wrapper">
+                <label htmlFor='date'>Date of visit</label>
+                <input type="date" id='date' />
+              </div>
+              <div className="input-wrapper">
+                <label htmlFor='dur'>Duration</label>
+                <input type="text" id='dur' placeholder='Enter date' />
               </div>
             </div>
+            <a href="#"> Book Now</a>
           </form>
-
+        </div>
+        <div className="elephant-logo-wrapper">
+          <img src={Elephant} alt="Elephant logo" />
         </div>
       </div>
     </section>

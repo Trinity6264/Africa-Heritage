@@ -138,81 +138,121 @@
 }
 
 /* Reserve */
-.reserve{
-    /* height: 100vh; */
-    width: 100%;
-    padding-bottom: 1em;
-    background-color: var(--dark-color);
+.reserve {
+  /* height: 100vh; */
+  width: 100%;
+  padding-bottom: 1em;
+  background-color: var(--dark-color);
 }
 
 /* Reserve */
 
-.slot-logo-wrapper{
-    display: flex;
-    justify-content: flex-end;
+.slot-logo-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.slot-logo-wrapper img{
-    width: 5em;
+.slot-logo-wrapper img {
+  width: 5em;
 }
-.reserve h1{
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--light-color);
-    margin-bottom: 1em;
+.reserve h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--light-color);
+  margin-bottom: 1em;
 }
-.reserve .reserve-card-wrapper{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 3em;
-}
-
-.reserve-card-wrapper .reserve-card{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.reserve .reserve-card-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3em;
 }
 
-.reserve-card-wrapper .reserve-card p{
-    color: var(--light-color);
+.reserve-card-wrapper .reserve-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.reserve-card-wrapper .reserve-card .see-more{
-    color: var(--primary-color);
-    cursor: pointer;
+.reserve-card-wrapper .reserve-card p {
+  color: var(--light-color);
+}
+
+.reserve-card-wrapper .reserve-card .see-more {
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 /* reserve-2 */
-.reserve-2{
-    width: 100%;
-    height: 100vh;
-    
+.reserve-2 {
+  width: 100%;
+  padding-bottom: 3em;
 }
 
-.reserve-2 .reserve-2-imgs-wrapper{
-    display: flex;
-    gap: 2em;
-    padding: 2em 0;
-    margin-left: 2em;
+.reserve-2 .reserve-2-imgs-wrapper {
+  display: flex;
+  gap: 2em;
 }
 
-.reserve-2 h1{
-    text-align: center;
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin: 1em 0;
+.reserve-2 h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin: 1em 0;
 }
 
-.reserve-2 .reserve-form{
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    gap: 5em;
+.reserve-2 .reserve-form {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 2em;
 }
 
-.reserve-2 .reserve-form form {
-    width: 100%;
+
+
+.reserve-2 .reserve-form form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserve-2 .reserve-form form .input-wrapper input {
+  border: 1px solid var(--border-color);
+  width: 100%;
+  border-radius: 4px;
+  padding: 1.2em 1em;
+  margin-bottom: 1em;
+}
+
+.reserve-2 .reserve-form form .input-wrapper input::placeholder {
+  color: var(--hint-color);
+}
+
+.date-wrapper {
+  display: flex;
+  gap: 3em;
+}
+
+.reserve-2 .reserve-form form a{
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 3px;
+  padding: 1em;
+  display: block;
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--light-color);
+  font-weight: 600;
+  transition: all 300ms ease;
+}
+
+.reserve-2 .reserve-form form a:hover{
+  background-color: var(--primary-dark-color);
+}
+
+
+.elephant-logo-wrapper{
+  width: 4.5em;
 }

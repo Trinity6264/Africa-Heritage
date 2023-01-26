@@ -15,6 +15,8 @@
   --primary-color: rgba(236, 117, 47, 1);
   --primary-dark-color: rgba(126, 75, 37, 1);
   --light-color: rgba(255, 255, 255, 1);
+  --border-color: rgba(193, 193, 193, 0.5);
+  --hint-color: rgba(193, 193, 193, 1.0);
   --dark-color: rgba(51, 51, 51, 1);
   --light-dark-color: rgba(51, 51, 51, 0.5);
 }
